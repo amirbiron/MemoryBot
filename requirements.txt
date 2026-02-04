@@ -1,0 +1,21 @@
+# Memory Agent Bot - Dependencies
+# ================================
+
+# Web Framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# Telegram Bot
+python-telegram-bot[webhooks]==21.9
+
+# MongoDB
+pymongo[srv]==4.10.1
+
+# OpenAI Embeddings
+openai==1.61.0
+
+# Environment Variables
+python-dotenv==1.0.1
+
+# Optional: Better async support
+httpx==0.28.1
