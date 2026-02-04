@@ -774,7 +774,7 @@ async def on_shutdown():
     await ptb_app.shutdown()
 
 
-@app.post("/webhook/{secret}")
+@app.post("/webhook/{secret:path}")
 async def telegram_webhook(secret: str, request: Request):
     """קבלת עדכונים מטלגרם."""
     if secret != WEBHOOK_SECRET:
