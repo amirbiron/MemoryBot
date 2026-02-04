@@ -56,8 +56,8 @@ MemoryBot/
 
 1. היכנס ל-MongoDB Atlas
 2. לך ל-**Database** → בחר את ה-cluster
-3. לחץ על **Atlas Search** (לא על Indexes רגיל!)
-4. לחץ **Create Search Index**
+3. לחץ על **Vector Search** (לא על Atlas Search או Indexes רגיל!)
+4. לחץ **Create Index**
 5. בחר **JSON Editor**
 6. בחר את ה-database והcollection: `memory_bot.memories`
 7. שם האינדקס: `memories_vector_index`
@@ -86,7 +86,7 @@ MemoryBot/
 
 **חשוב**: הכפתור יהיה אפור אם:
 - אין documents עם שדה `embedding` ב-collection (זה בסדר, אפשר ליצור בכל זאת)
-- אתה בממשק הלא נכון (צריך Atlas Search, לא Indexes)
+- אתה בממשק הלא נכון (צריך Vector Search, לא Atlas Search או Indexes)
 
 ## פקודות שימושיות
 
